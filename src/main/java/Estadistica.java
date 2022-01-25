@@ -14,7 +14,7 @@ public class Estadistica {
     }
 
     public int varianza(ArrayList<Integer> vector){
-
+//Pr
     }
 
     public int desviacionEstandar(ArrayList<Integer> vector){
