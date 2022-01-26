@@ -28,12 +28,6 @@ public class Estadistica {
     }
 
     public static double desviacionEstandar(ArrayList<Integer> vector) {
-        /*int longitud = vector.size();
-        double media = mediaAritmetica(vector), sumatorio = 0, s = 0;
-        for (int numero : vector){
-            sumatorio += Math.pow((numero - media), 2);
-        }
-        s = Math.sqrt(sumatorio / (longitud - 1));*/
         double varianza = varianza(vector);
         double desviacionTipica = Math.sqrt(varianza);
         double redondeo = Math.round(desviacionTipica * 100.0) / 100.0; //Redondeo a dos decimales

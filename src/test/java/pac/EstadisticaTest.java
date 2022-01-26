@@ -1,14 +1,17 @@
 package pac;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
+@DisplayName("Test de la clase Estadistica")
 class EstadisticaTest {
 
+
     @Test
+    @DisplayName("Test de la media aritmetica")
     void mediaAritmetica() {
         ArrayList<Integer> vect = new ArrayList<Integer>();
         vect.add(5); vect.add(5); vect.add(5); vect.add(5);
@@ -33,6 +36,7 @@ class EstadisticaTest {
     }
 
     @Test
+    @DisplayName("Test de la varianza")
     void varianza() {
         ArrayList<Integer> vect = new ArrayList<Integer>();
         vect.add(12); vect.add(6); vect.add(7); vect.add(3); vect.add(15); vect.add(10); vect.add(18); vect.add(5);
@@ -49,6 +53,7 @@ class EstadisticaTest {
     }
 
     @Test
+    @DisplayName("Test de la desciacion estandar")
     void desviacionEstandar() {
         ArrayList<Integer> vect = new ArrayList<Integer>();
         vect.add(9); vect.add(3); vect.add(8); vect.add(8); vect.add(9); vect.add(8); vect.add(9); vect.add(18);
